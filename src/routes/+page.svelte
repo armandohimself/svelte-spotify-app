@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import DisplayName from '$lib/components/DisplayName.svelte';
+</script>
+
+<h1>We start our journey here</h1>
+
+<DisplayName></DisplayName>
+
+<style>
+	h1 {
+		font-size: 3em;
+		font-family: 'Courier New', Courier, monospace;
+		font-weight: 900;
+	}
+</style>
