@@ -46,7 +46,10 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"@fontsource/inter": "^5.2.5",
+		"@fontsource/metropolis": "^5.2.5",
 		"@unsass/breakpoint": "^2.4.0",
-		"modern-normalize": "^3.0.1"
+		"modern-normalize": "^3.0.1",
+		"pkce-gen": "^1.1.0"
 	}
 }

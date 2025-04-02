@@ -1,8 +1,14 @@
 # 🎧 SvelteKit Spotify Project
 
-A modern Spotify-style app built with SvelteKit, TypeScript, TailwindCSS, and full testing coverage using ViTest and Playwright. Spotify API is used to pull real data.
+A modern Spotify-style app built with SvelteKit, TypeScript, TailwindCSS, and full testing coverage using ViTest and Playwright. It uses the Spotify Web API to pull real user data including playlists, tracks, and profile information.
 
-This project demonstrates clean architecture, fast reactivity, and a polished developer experience — designed as a showcase for real-world frontend skills.
+This project demonstrates:
+
+- Clean architecture and separation of concerns
+- Signal-based reactivity in Svelte 5
+- OAuth 2.0 login with PKCE (Proof Key for Code Exchange)
+- Testing best practices
+- Global styling with Sass + utility-first Tailwind
 
 ## 🚀 Tech Stack
 
@@ -19,15 +25,15 @@ This project demonstrates clean architecture, fast reactivity, and a polished de
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/armandohimself/svelte-spotify-app.git
+cd svelte-spotify-app
 npm install
 ```
 
 ### 2. Start Dev Server
 
 ```bash
-npm run dev --open
+npm run dev -- --open
 ```
 
 Then open your browser to http://localhost:5173 (or it opens automatically with --open).
@@ -89,3 +95,12 @@ npm -v
 ## 🙋‍♂️ Why This Project Exists
 
 -
+
+🔗 Useful Links
+
+- Spotify Developer Dashboard
+- Spotify Web API Docs
+- PKCE Explained
+- ViTest Docs
+- Playwright Docs
+- SvelteKit Docs

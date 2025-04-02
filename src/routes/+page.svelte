@@ -1,10 +1,16 @@
 <script>
-	import DisplayName from '$lib/components/DisplayName.svelte';
+	// import DisplayName from '$lib/components/DisplayName.svelte';
 </script>
 
-<h1>We start our journey here</h1>
+<h1>We start our journey here...</h1>
 
-<DisplayName></DisplayName>
+<input />
+<select>
+	<option>Option</option>
+</select>
+<button>Button</button>
+
+<!-- <DisplayName></DisplayName> -->
 
 <style lang="scss">
 	h1 {
