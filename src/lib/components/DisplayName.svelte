@@ -49,13 +49,4 @@
 <h1>Current {username ? 'Username' : 'Full Name'}: {username || fullName}</h1>
 
 <style>
-	h1 {
-		color: red;
-	}
-
-	input {
-		border: 1px solid #ccc;
-		padding: 0.5rem;
-		border-radius: 4px;
-	}
 </style>

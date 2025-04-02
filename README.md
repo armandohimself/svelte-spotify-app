@@ -1,50 +1,91 @@
-# sv
+# 🎧 SvelteKit Spotify Project
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A modern Spotify-style app built with SvelteKit, TypeScript, TailwindCSS, and full testing coverage using ViTest and Playwright. Spotify API is used to pull real data.
 
-## Creating a project
+This project demonstrates clean architecture, fast reactivity, and a polished developer experience — designed as a showcase for real-world frontend skills.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🚀 Tech Stack
+
+- SvelteKit — lightning-fast frontend framework
+- Vite — next-gen build tool (used under the hood by SvelteKit)
+- TypeScript — typed safety and clarity
+- TailwindCSS — utility-first styling
+- ViTest — component and logic testing
+- Playwright — end-to-end browser testing
+- ESLint + Prettier — consistent code formatting and linting
+
+## 📦 Getting Started
+
+### 1. Clone & Install
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+npm install
 ```
 
-## Developing
-
-How to start the development server:
+### 2. Start Dev Server
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm run dev --open
 ```
 
-## Building
+Then open your browser to http://localhost:5173 (or it opens automatically with --open).
 
-To create a production version of your app:
+## 🧪 Testing
+
+### ✅ Unit & Component Tests (ViTest)
+
+```bash
+npm run test
+```
+
+### ✅ End-to-End Tests (Playwright)
+
+```bash
+npx playwright install
+npm run test:e2e
+```
+
+Playwright will simulate user flows like adding songs, navigating playlists, and checking responsive behavior.
+
+## 🏗️ Building for Production
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Then preview your optimized app with:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
 
-## Extensions I Installed
+> 🔧 For deployment, install the correct SvelteKit adapter based on your hosting platform (Vercel, Netlify, Node, etc.).
 
-- https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
-- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
-- https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode
-- Svelte Dev Society mentioned some important resources you might want to check out too: https://www.sveltesociety.dev/resources#editor-support
+## 🛠️ Dev Tools & VS Code Extensions
 
-## Requirements You Will Need Installed on Your Machine
+For the best developer experience, install:
 
-- Node.js version ???
-- npm version ???
+- Svelte for VS Code
+- ESLint
+- Prettier
+
+Svelte Dev Society also curates some great tools:
+🔗 Editor Support & Resources
+
+## 💻 System Requirements
+
+- Node.js: >=18.0.0
+- npm: >=9.0.0
+
+> You can check your versions with:
+
+```bash
+node -v
+npm -v
+```
+
+## 🙋‍♂️ Why This Project Exists
+
+-

@@ -6,10 +6,15 @@
 
 <DisplayName></DisplayName>
 
-<style>
+<style lang="scss">
 	h1 {
-		font-size: 3em;
-		font-family: 'Courier New', Courier, monospace;
-		font-weight: 900;
+		color: red;
+		font-size: functions.toRem(36);
+		@include breakpoint.up('md') {
+			color: green;
+		}
+		@include breakpoint.up('lg') {
+			color: blue;
+		}
 	}
 </style>
