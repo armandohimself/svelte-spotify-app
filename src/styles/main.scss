@@ -1,11 +1,13 @@
 @use 'functions'; // toREM utility
 
 // Fonts
-@import '@fontsource/inter';
-@import '@fontsource/inter/400';
-@import '@fontsource/inter/500';
-@import '@fontsource/inter/600';
-@import '@fontsource/inter/700';
+@use 'sass:meta';
+
+@include meta.load-css('@fontsource/inter');
+@include meta.load-css('@fontsource/inter/400');
+@include meta.load-css('@fontsource/inter/500');
+@include meta.load-css('@fontsource/inter/600');
+@include meta.load-css('@fontsource/inter/700');
 
 // Lyft Color Palette (soft, modern, accessible)
 :root {
