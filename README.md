@@ -77,6 +77,27 @@ For the best developer experience, install:
 - ESLint
 - Prettier
 
+## 📦 NPM Dependency Links
+
+- [Modern Normalize - Normalized browsers' default style](https://github.com/sindresorhus/modern-normalize?tab=readme-ov-file)
+- [Sass Stylesheet - to organize styles](https://sass-lang.com/install/)
+- [Svelte Preprocessor - to support SCSS](https://github.com/sveltejs/svelte-preprocess)
+- [Sass functions and mixins to use media queries rules.](https://github.com/unsass/breakpoint)
+- [@fontsource/metropolis - closest font to Spotify](https://www.npmjs.com/package/@fontsource/metropolis)
+- [@fontsource/inter - closest font to Lyft](https://www.npmjs.com/package/@fontsource/inter)
+- [PCKE Generator](https://www.npmjs.com/package/pkce-gen)
+- [Types Definitions for Node](https://www.npmjs.com/package/@types/node)
+- []()
+
+## 🔗 Useful Links
+
+- Spotify Developer Dashboard
+- [Spotify Web API Docs](https://developer.spotify.com/documentation/web-api)
+- [PKCE Explained](https://dropbox.tech/developers/pkce--what-and-why-)
+- ViTest Docs
+- Playwright Docs
+- SvelteKit Docs
+
 Svelte Dev Society also curates some great tools:
 🔗 Editor Support & Resources
 
@@ -95,12 +116,3 @@ npm -v
 ## 🙋‍♂️ Why This Project Exists
 
 -
-
-🔗 Useful Links
-
-- Spotify Developer Dashboard
-- Spotify Web API Docs
-- PKCE Explained
-- ViTest Docs
-- Playwright Docs
-- SvelteKit Docs
