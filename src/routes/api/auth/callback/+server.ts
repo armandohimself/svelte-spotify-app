@@ -1,5 +1,5 @@
 import { BASE_URL, SPOTIFY_APP_CLIENT_ID, SPOTIFY_APP_CLIENT_SECRET } from '$env/static/private';
-import { error } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
 export const GET: RequestHandler = async ({ url, cookies, fetch }) => {
@@ -37,8 +37,16 @@ export const GET: RequestHandler = async ({ url, cookies, fetch }) => {
 
 	// --- 5. Parse and log the token response ---
 	const responseJSON = await response.json();
-	console.log(responseJSON); // This will include access_token, token_type, expires_in, refresh_token, and scope
 
-	// --- 6. Send the token data as the response (optional: you’ll probably want to store this in a session or DB) ---
-	return new Response(responseJSON);
+	if (responseJSON.error) {
+		throw error(400, responseJSON.error_description);
+	}
+
+	cookies.delete('spotify_auth_state', { path: '/' });
+	cookies.delete('spotify_auth_challenge_verifier', { path: '/' });
+
+	cookies.set('refresh_token', responseJSON.refresh_token, { path: '/' });
+	cookies.set('access_token', responseJSON.access_token, { path: '/' });
+
+	throw redirect(303, '/');
 };
