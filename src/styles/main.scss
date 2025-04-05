@@ -106,3 +106,23 @@ a {
 		transition: outline 0.2s ease;
 	}
 }
+
+button {
+	background-color: var(--accent-color);
+	color: white;
+	border-radius: 8px;
+	font-weight: 600;
+	padding: 0.5em 1.25em;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+
+	&:hover {
+		background-color: var(--accent-color-hover); // optional
+	}
+
+	&:focus-visible {
+		outline: 3px solid var(--accent-color);
+		outline-offset: 2px;
+	}
+}

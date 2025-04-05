@@ -87,6 +87,7 @@ For the best developer experience, install:
 - [@fontsource/inter - closest font to Lyft](https://www.npmjs.com/package/@fontsource/inter)
 - [PCKE Generator](https://www.npmjs.com/package/pkce-gen)
 - [Types Definitions for Node](https://www.npmjs.com/package/@types/node)
+- [Types Definitions for Spotify Objecs](https://www.npmjs.com/package/@types/spotify-api)
 - []()
 
 ## 🔗 Useful Links

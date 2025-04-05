@@ -1,5 +1,4 @@
 <script>
-	// import DisplayName from '$lib/components/DisplayName.svelte';
 </script>
 
 <h1>We start our journey here...</h1>

@@ -49,6 +49,7 @@
 	"dependencies": {
 		"@fontsource/inter": "^5.2.5",
 		"@fontsource/metropolis": "^5.2.5",
+		"@types/spotify-api": "^0.0.25",
 		"@unsass/breakpoint": "^2.4.0",
 		"modern-normalize": "^3.0.1",
 		"pkce-gen": "^1.1.0"

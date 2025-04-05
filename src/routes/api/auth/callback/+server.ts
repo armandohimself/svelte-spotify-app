@@ -38,6 +38,8 @@ export const GET: RequestHandler = async ({ url, cookies, fetch }) => {
 	// --- 5. Parse and log the token response ---
 	const responseJSON = await response.json();
 
+	console.log(responseJSON.error);
+
 	if (responseJSON.error) {
 		throw error(400, responseJSON.error_description);
 	}
