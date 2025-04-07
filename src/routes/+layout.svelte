@@ -14,5 +14,8 @@
 {data.user?.email}
 {data.user?.display_name}
 
-<!-- Placeholder that tells Svelte to render whatever child page or layout goes here -->
+<!-- 
+A layout wrapper that stays consistent between routes (like navbars, headers, or auth guards). 
+It includes a <slot /> to render the active page. 
+-->
 <slot />
