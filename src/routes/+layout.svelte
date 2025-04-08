@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { LogoutButton } from '$components';
 	import 'modern-normalize/modern-normalize.css';
 	import '../styles/main.scss';
 	import type { LayoutData } from './$types';
@@ -12,14 +11,29 @@
 	$: user = data.user;
 </script>
 
-{#if user}
-	<p>Hello {user.display_name}</p>
-	<LogoutButton></LogoutButton>
-{/if}
+<div id="main">
+	<div id="content">
+		<div id="main-content">
+			<slot />
+		</div>
+	</div>
+</div>
 
-<slot />
 <!--
 This is a layout component.
 It wraps all child pages and uses <slot /> to render them inside.
 Useful for shared UI like headers, navbars, or auth logic.
 -->
+
+<style lang="scss">
+	#main {
+		#content {
+			main#main-content {
+				padding: 30px 15px 60px;
+				@include breakpoint.up('md') {
+					padding: 30px 30px 60px;
+				}
+			}
+		}
+	}
+</style>
