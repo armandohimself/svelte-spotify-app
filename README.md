@@ -114,6 +114,7 @@ node -v
 npm -v
 ```
 
-## 🙋‍♂️ Why This Project Exists
+## Userful NPM Commands
 
+- Check Svelte/SvelteKit version: `npm list svelte @sveltejs/kit`
 -

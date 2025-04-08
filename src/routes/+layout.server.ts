@@ -1,7 +1,8 @@
 import { SPOTIFY_BASE_URL } from '$env/static/private';
+import { redirect } from '@sveltejs/kit';
 import type { LayoutServerLoad } from './$types';
 
-export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
+export const load: LayoutServerLoad = async ({ cookies, fetch, url }) => {
 	// load - runs before rendering a layout or page
 
 	/**
@@ -16,6 +17,7 @@ export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
      */
 
 	const accessToken = cookies.get('access_token');
+	const refreshToken = cookies.get('refresh_token');
 
 	if (!accessToken) {
 		return {
@@ -38,6 +40,22 @@ export const load: LayoutServerLoad = async ({ cookies, fetch }) => {
 
 		return {
 			user: profile
+		};
+	}
+
+	// If we got an unauthorized, maybe our access token expired thus we check using our refresh token
+	if (profileResponse.status === 401 && refreshToken) {
+		// use refresh token to get new tokens
+		const refreshResponse = await fetch('api/auth/refresh');
+
+		// If that was successful then we should redirect the user back to where they came from
+		if (refreshResponse.ok) {
+			throw redirect(307, url.pathname);
+		}
+
+		// otherwise, they should not have access
+		return {
+			user: null
 		};
 	} else {
 		// Otherwise just return an empty user
