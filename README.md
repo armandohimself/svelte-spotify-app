@@ -88,6 +88,7 @@ For the best developer experience, install:
 - [PCKE Generator](https://www.npmjs.com/package/pkce-gen)
 - [Types Definitions for Node](https://www.npmjs.com/package/@types/node)
 - [Types Definitions for Spotify Objecs](https://www.npmjs.com/package/@types/spotify-api)
+- [Lucide Icon Library for Svelte](https://www.npmjs.com/package/lucide-svelte)
 - []()
 
 ## 🔗 Useful Links
@@ -98,6 +99,7 @@ For the best developer experience, install:
 - ViTest Docs
 - Playwright Docs
 - SvelteKit Docs
+- [Avoiding the FOUC (Flash of Unstyled Content) v3.0](https://www.paulirish.com/2009/avoiding-the-fouc-v3/)
 
 Svelte Dev Society also curates some great tools:
 🔗 Editor Support & Resources

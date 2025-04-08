@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LogoutButton from '$components/LogoutButton.svelte';
+	import { LogoutButton } from '$components';
 	import 'modern-normalize/modern-normalize.css';
 	import '../styles/main.scss';
 	import type { LayoutData } from './$types';
