@@ -89,6 +89,9 @@ For the best developer experience, install:
 - [Types Definitions for Node](https://www.npmjs.com/package/@types/node)
 - [Types Definitions for Spotify Objecs](https://www.npmjs.com/package/@types/spotify-api)
 - [Lucide Icon Library for Svelte](https://www.npmjs.com/package/lucide-svelte)
+- [Vitest - next generation testing framework](https://github.com/vitest-dev/vitest#readme)
+- [Playwright - E2E testing](https://playwright.dev/docs/intro)
+- [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro/)
 - []()
 
 ## 🔗 Useful Links
@@ -100,6 +103,8 @@ For the best developer experience, install:
 - Playwright Docs
 - SvelteKit Docs
 - [Avoiding the FOUC (Flash of Unstyled Content) v3.0](https://www.paulirish.com/2009/avoiding-the-fouc-v3/)
+- [Svelte Society Testing Recipes](https://www.sveltesociety.dev/recipes/testing-and-debugging/unit-testing-svelte-component)
+- []()
 
 Svelte Dev Society also curates some great tools:
 🔗 Editor Support & Resources
