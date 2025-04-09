@@ -11,24 +11,24 @@
 
 // Lyft Color Palette (soft, modern, accessible)
 :root {
-	--bg-color: #f9f9fb;
-	--sidebar-color: #ffffff;
-	--header-color: #ffffff;
-	--text-color: #1f1f1f;
-	--accent-color: #ff00bf; // Lyft pink
-	--accent-color-hover: #cc0099;
-	--accent-light: #ffc4e1;
-	--menu-background-color: #ffffff;
-	--light-gray: #e5e5e5;
-	--medium-gray: #cccccc;
-	--dark-gray: #5f5f5f;
-	--menu-text-color: #1f1f1f;
-	--border: rgba(0, 0, 0, 0.1);
+	--bg-color: #333447; /* Lyft's dark base */
+	--sidebar-color: #352384; /* Deep purple sidebar */
+	--header-color: #352384; /* Match sidebar for cohesion */
+	--text-color: #f3f3f5; /* Light Lyft gray-white for readability */
+	--accent-color: #ff00bf; /* Lyft pink for CTAs or highlights */
+	--accent-color-hover: #cc0099; /* A hover pink with more depth */
+	--accent-light: #ffc4e1; /* Light pink background for soft sections */
+	--menu-background-color: #352384; /* Make dropdowns or menus cohesive */
+	--light-gray: #e0e0e6; /* Slightly cooler light gray */
+	--medium-gray: #a5a5b5; /* Lyft-compatible medium tone */
+	--dark-gray: #5a5a6a; /* Charcoal tone with a purple tint */
+	--menu-text-color: #f3f3f5; /* Keep high contrast */
+	--border: rgba(243, 243, 245, 0.1); /* Subtle Lyft white border */
 	--sidebar-width: 260px;
 	--header-height: 64px;
-	--error: #e0415f;
-	--warning: #f9a825;
-	--success: #28c76f;
+	--error: #e0415f; /* Keep this, it contrasts well */
+	--warning: #f9a825; /* Good for yellow alerts */
+	--success: #28c76f; /* Vivid green works on dark */
 }
 
 body {
