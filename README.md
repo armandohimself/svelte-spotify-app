@@ -96,15 +96,30 @@ For the best developer experience, install:
 
 ## 🔗 Useful Links
 
+### 🎧 Spotify + 🔐 Auth
+
 - Spotify Developer Dashboard
 - [Spotify Web API Docs](https://developer.spotify.com/documentation/web-api)
 - [PKCE Explained](https://dropbox.tech/developers/pkce--what-and-why-)
-- ViTest Docs
-- Playwright Docs
+
+### 🧑🏽‍💻 Framework & Code
+
 - SvelteKit Docs
-- [Avoiding the FOUC (Flash of Unstyled Content) v3.0](https://www.paulirish.com/2009/avoiding-the-fouc-v3/)
+- [HTTP Response Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status#redirection_messages)
+
+### 🧪 Testing
+
+- [Testing Svelte Documentation](https://svelte.dev/docs/svelte/testing)
+- [ViTest Docs](https://vitest.dev/guide/)
+- [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro/)
+- [Playwright Docs](https://playwright.dev/docs/intro)
 - [Svelte Society Testing Recipes](https://www.sveltesociety.dev/recipes/testing-and-debugging/unit-testing-svelte-component)
-- []()
+
+### 🎨 Styling
+
+- [Avoiding the FOUC (Flash of Unstyled Content) v3.0](https://www.paulirish.com/2009/avoiding-the-fouc-v3/)
+- [Lucide Icons Search](https://lucide.dev/icons/)
+- [MDN SVG Attributes for Lucide Icons](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute)
 
 Svelte Dev Society also curates some great tools:
 🔗 Editor Support & Resources
